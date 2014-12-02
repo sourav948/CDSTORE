@@ -1,7 +1,7 @@
 "Online CD STORE" 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Locations:
--BlueTeam.zip contains following folders/files:
+- contains following folders/files:
     |--cdshop_client
        |-- src
        |-- WebContent  
