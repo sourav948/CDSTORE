@@ -121,7 +121,7 @@ public class CustomerController {
 			response.addCookie(c1);
 			c1.setMaxAge(3600);
 			Cookie c2 = new Cookie("cd_userpassword", customer.getPassword());
-			// 设置生命周期为1小时，秒为单位
+			
 			c2.setMaxAge(3600);
 			response.addCookie(c2);*/
 			
