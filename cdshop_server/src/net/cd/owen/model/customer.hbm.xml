@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="net.cd.owen.model">
+    <class name="Customer" table="customers">
+        <id column="customerId" name="customerId"> 
+        <generator class="native"/> 
+        </id>
+        <property column="customerName" name="customerName" type="java.lang.String" />
+        <property column="password" name="password" type="string" />
+        <property column="email" name="email" type="java.lang.String" />
+        <property column="phoneNumber" name="phoneNumber" type="java.lang.String" />
+         <property column="address" name="address" type="java.lang.String" />
+        <property column="city" name="city" type="java.lang.String" />
+        <property column="nation" name="nation" type="java.lang.String" />
+        <property column="province" name="province" type="java.lang.String" />
+        <property column="zip" name="zip" type="java.lang.String" />
+        <property column="registerTime" name="registerTime" type="java.util.Date" />
+        <property column="account" name="account" type="java.lang.Double" />
+        <property column="paymentType" name="paymentType" type="java.lang.Integer" />
+    </class>
+</hibernate-mapping>

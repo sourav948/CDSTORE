@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<!-- <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/cd_store</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">xiaodingwen</property> -->
+		<property name="show_sql">true</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<!-- <property name="jdbc.fetch_size">50</property>
+设定对数据库进行批量删除
+        <property name="jdbc.batch_size">30</property> -->
+        <!-- <property name="connection.provider_class">net.sf.hibernate.connection.DatasourceConnectionProvider</property> -->
+		 <property name="format_sql">true</property>
+		<!--<property name="hbm2ddl.auto">create </property>-->
+		 <property name="hibernate.current_session_context_class">thread</property>  
+		<property name="hibernate.connection.datasource">java:/comp/env/music_zone</property>
+		<mapping resource="net/cd/owen/model/category.hbm.xml" />
+		<mapping resource="net/cd/owen/model/cd.hbm.xml" />
+		<mapping resource="net/cd/owen/model/customer.hbm.xml" />
+		<mapping resource="net/cd/owen/model/order.hbm.xml" />
+		<mapping resource="net/cd/owen/model/orderdetail.hbm.xml" />
+		<mapping resource="net/cd/owen/model/creditcard.hbm.xml" />
+	</session-factory>
+</hibernate-configuration>

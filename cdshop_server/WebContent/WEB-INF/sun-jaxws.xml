@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoints xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime"
+	version="2.0">
+	<endpoint name="ProductCatalogService" implementation="net.cd.owen.service.productcatalog.ProductCatalogServiceImp"
+		url-pattern="/ProductCatalogWs" />
+	<endpoint name="OrderProcessService" implementation="net.cd.owen.service.orderprocess.OrderProcessServiceImp"
+		url-pattern="/OrderProcessWs" />
+	<endpoint name="CustomerService" implementation="net.cd.owen.service.customer.CustomerServiceImp"
+		url-pattern="/CustomerWs" />
+		
+</endpoints>

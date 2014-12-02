@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="net.cd.owen.model">
+    <class name="OrderDetail" table="order_details">
+        <id column="orderDetailId" name="orderDetailId"> 
+        <generator class="identity"/> 
+        </id>
+        <property column="number" name="number" type="java.lang.Integer" />
+        <property column="cdid" name="cdid" type="java.lang.Long" />
+        <property column="categoryId" name="categoryId" type="java.lang.Long" />
+        <property column="price" name="price" type="java.lang.Double" />
+    	<property column="orderId" name="orderId" type="java.lang.Long" />
+      <!--   <many-to-one name="order" class="Order" fetch="select">
+            <column name="orderId" not-null="true" />
+        </many-to-one> -->
+       
+    </class>
+</hibernate-mapping>

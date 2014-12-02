@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="net.cd.owen.model">
+    <class name="Cd" table="cd">
+        <id column="cdid" name="cdid"> 
+        <generator class="native"/> 
+        </id>
+        <property column="title" name="title" type="java.lang.String" />
+        <property column="price" name="price" type="java.lang.Double" />
+        <property column="description" name="description" type="java.lang.String" />
+        <property column="categoryId" name="categoryId" type="java.lang.Long" />
+        <property column="singer" name="singer" type="java.lang.String" />
+        <property column="picUrl" name="picUrl" type="java.lang.String" />
+    </class>
+</hibernate-mapping>

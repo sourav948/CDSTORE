@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="net.cd.owen.model">
+    <class name="Order" table="orders">
+        <id column="orderId" name="orderId"> 
+        <generator class="identity"/> 
+        </id>
+        <property column="orderTime" name="orderTime" type="java.util.Date" />
+        <property column="updateTime" name="updateTime" type="java.util.Date" />
+        <property column="orderStatus" name="orderStatus" type="java.lang.Integer" />
+        <property column="totalPrice" name="totalPrice" type="java.lang.Double" />
+        <property column="paymentType" name="paymentType" type="java.lang.Integer" />
+        <property column="taxes" name="taxes" type="java.lang.Double" />
+        <property column="phoneNumber" name="phoneNumber" type="java.lang.String" />
+         <property column="customerName" name="customerName" type="java.lang.String" />
+        <property column="address" name="address" type="java.lang.String" />
+         <!-- <set name="orderDetails" inverse="false" cascade="all">
+            <key>
+                <column name="orderId" not-null="true" />
+            </key>
+            <one-to-many class="OrderDetail" />
+     	</set> -->
+    </class>
+</hibernate-mapping>
